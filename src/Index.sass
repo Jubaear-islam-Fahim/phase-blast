@@ -1,0 +1,141 @@
+$title-clr : #000
+$base-clr : #00FF9F
+
+@font-face
+	font-family: 'Euphemia UCAS'
+	src: url('./assets/fonts/Euphemia UCAS Regular 2.6.6.ttf') format('woff')
+@font-face
+	font-family: 'Euphemia UCAS Bold'
+	src: url('./assets/fonts/Euphemia UCAS Bold 2.6.6.ttf') format('woff')
+
+@font-face
+	font-family: 'Open 24 Display St'
+	src: url('./assets/fonts/FontsFree-Net-Open-24-Display-St.ttf') format('woff')
+
+html
+	scroll-behavior: smooth
+
+body
+	background: #080016
+	color: #fff
+	font-family: 'Euphemia UCAS'
+	font-size: 24px
+	line-height: 32.51px
+	@media (max-width:991px)
+		font-size: 18px
+		line-height: 1.45
+	@media (max-width:575px)
+		font-size: 16px
+.container
+	@media (min-width:1500px)
+		max-width: 1470px
+.auto-container
+	@media (min-width:1400px)
+		max-width: 100%
+		padding: 0 90px
+ul
+	padding: 0
+	margin: 0
+li
+	padding: 0
+	margin: 0
+	list-style: none
+a
+	transition: all ease .3s
+.btn--base
+	color: #040404
+	text-decoration: none
+	font-size: 16px
+	border-radius: 27px
+	padding: 10px 45px
+	border: 1px solid $base-clr
+	overflow: hidden
+	position: relative
+	span
+		position: relative
+		z-index: 1
+	&::before
+		position: absolute
+		content: ''
+		inset: 0 0 0 0
+		background: $base-clr
+		transition: all ease .3s
+	&:hover
+		color: #fff
+		background: transparent
+		&::before
+			top: 100%
+h1,
+h2,
+h3,
+h4
+	font-family: 'Euphemia UCAS Bold'
+
+.btn--default
+	color: #ffffff
+	text-decoration: none
+	font-size: 16px
+	border-radius: 27px
+	padding: 10px 38px
+	overflow: hidden
+	position: relative
+	span
+		position: relative
+		z-index: 1
+	&::before
+		position: absolute
+		content: ''
+		inset: 0 0 0 0
+		background: linear-gradient(133.96deg, #01FBA9 1.75%, #39EBF4 22.48%, #E907FF 90.71%, #B83BFF 100%)
+		transition: all ease .3s
+	&:hover, &.outline
+		color: #fff
+		background: transparent
+		&::before
+			top: 100%
+	&.outline
+		&:hover::before
+			top: 0
+.btnContainer
+	display: flex
+	flex-wrap: wrap
+	align-items: center
+	@media (max-width:575px)
+		justify-content: space-evenly
+	margin: -5px
+	>*
+		margin: 5px
+
+
+.aboutContent
+	text-align: center
+	margin-bottom: 30px
+	@media (min-width:768px)
+		margin-bottom: 45px
+.pb-150
+	padding-bottom: 150px
+.pt-150
+	padding-top: 150px
+
+@media (max-width:1399px)		
+	.pb-150
+		padding-bottom: 120px
+	.pt-150
+		padding-top: 120px
+@media (max-width:1199px)		
+	.pb-150
+		padding-bottom: 100px
+	.pt-150
+		padding-top: 100px
+@media (max-width:991px)		
+	.pb-150
+		padding-bottom: 80px
+	.pt-150
+		padding-top: 80px
+p:last-child
+	margin-bottom: 0		
+.text-gradient
+	display: inline-block
+	background: linear-gradient(90deg, #00EBFF 0%, #00FFA4 27.17%, #0AA2FF 50.83%, #EE00FF 74.27%, #AB48FF 100%)
+	-webkit-background-clip: text
+	-webkit-text-fill-color: transparent

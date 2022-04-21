@@ -1,0 +1,183 @@
+footer
+    padding-bottom: 200px
+    overflow: hidden
+    position: relative
+    .container
+        position: relative
+    .footerShape
+        width: 100%
+        min-width: 1720px
+        position: absolute
+        left: 50%
+        bottom: 0px
+        height: 300px
+        transform: translateX(-50%)
+        background: linear-gradient(180deg, #080016 0%, rgba(8, 0, 22, 0) 100%), linear-gradient(90deg, #00EBFF 0%, #00FFA4 27.17%, #0AA2FF 50.83%, #EE00FF 74.27%, #AB48FF 100%)
+        img
+            width: 100%
+    @media (max-width:1599px)
+        padding-bottom: 200px
+    @media (max-width:1199px)
+        padding-bottom: 120px
+        .footerShape
+            bottom: -100px
+    @media (max-width:767px)
+        padding-bottom: 120px
+        .footerShape
+            bottom: -100px
+            min-width: 1300px !important
+    @media (max-width:400px)
+        padding-bottom: 70px
+        .footerShape
+            bottom: -100px
+            min-width: 1300px !important
+    .footerBottom
+        position: relative
+.footerWrapper
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin: 0 -12px
+    .footerWidget
+        padding: 0 12px 35px
+        max-width: 280px
+        &.logoWidget
+            .logo
+                max-width: 100%
+                display: block
+                img
+                    width: 100%
+                    aspect-ratio: 1
+                    object-fit: contain
+        &.newsletterWidget
+            max-width: 572px
+            width: 100%
+            font-size: 14px
+            line-height: 1.5
+        @media (max-width:1600px)
+            &.newsletterWidget
+                max-width: 420px
+        @media (max-width:1399px)
+            margin: 0 !important
+            max-width: 220px
+            &.newsletterWidget
+                max-width: 380px
+            &.logoWidget
+                max-width: 160px
+        @media (max-width:1199px)
+            &.newsletterWidget
+                max-width: 100%
+            &.logoWidget
+                max-width: 225px
+        @media (max-width:991px)
+            &.logoWidget
+                max-width: 155px
+        @media (max-width:767px)
+            &.logoWidget
+                max-width: 100%
+                width: 100%
+                .logo
+                    max-width: 160px
+            &.linkWidget
+                width: 50%
+        @media (max-width:575px)
+            &.linkWidget
+                width: 260px
+                flex-grow: 1
+                max-width: 100%
+
+    .text-gradient
+        text-transform: uppercase
+        font-weight: 600
+        margin-bottom: 10px
+    .usefulLinks
+        margin: 0 -5px
+        display: flex
+        flex-wrap: wrap
+        li
+            padding: 0 5px
+            width: 50%
+            a
+                text-transform: capitalize
+                color: #fff
+                padding: 4px 0
+                text-decoration: none
+                font-size: 14px
+                display: flex
+                align-items: center
+                &:hover
+                    color: #00FF9F
+                svg
+                    font-size: 20px
+                    margin-right: 8px
+
+.subscribeButton
+	background: #7E0AAA
+	color: #fff
+	height: 37px
+	padding: 0 20px
+.subscribeForm
+    margin-top: 18px
+    margin-bottom: 28px
+    .input-group
+        position: relative
+        .form-control
+            height: 64px
+            color: #fff
+            border-radius: 12px !important
+            border: 1px solid #7E0AAA
+            background: transparent
+            padding-right: 125px
+            &:-webkit-autofill,
+            &:-webkit-autofill:hover,
+            &:-webkit-autofill:focus
+                -webkit-text-fill-color: #fff
+                -webkit-box-shadow: 0 0 0px 1000px #040404 inset
+                transition: background-color 5000s ease-in-out 0s
+            &::placeholder
+                color: #fff
+            &:focus
+                box-shadow: none !important
+        .subscribeButton
+            border-radius: 19px !important
+            border: none 
+            outline: none
+            box-shadow: none
+            position: absolute
+            top: 13px
+            right: 13px
+            z-index: 3
+        @media (max-width:1399px)
+            .form-control
+                height: 55px
+            .subscribeButton
+                top: 9px
+                right: 9px
+
+.footerBottom
+    font-size: 14px
+.quickLinks
+    display: flex
+    flex-wrap: wrap
+    li
+        &:not(:last-child) 
+            padding-right: 15px
+        &:first-child
+            a
+                padding-left: 0
+                &::before
+                    display: none
+        a
+            color: #fff
+            text-decoration: none
+            padding-left: 10px
+            position: relative
+            &::before
+                position: absolute
+                content: ''
+                left: -3px
+                top: 9px
+                border-radius: 50%
+                background: #fff
+                width: 4px
+                height: 4px

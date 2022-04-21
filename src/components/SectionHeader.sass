@@ -1,0 +1,35 @@
+
+.sectionHeader
+	.cate
+		font-family: 'Open 24 Display St'
+		font-size: 24px
+	.title
+		font-size: 78px
+		line-height: 105px
+		display: inline-block
+		background: linear-gradient(90deg, #00EBFF 0%, #00FFA4 27.17%, #0AA2FF 50.83%, #EE00FF 74.27%, #AB48FF 100%)
+		-webkit-background-clip: text
+		-webkit-text-fill-color: transparent
+		&:not(:last-child)
+			margin-bottom: 40px
+	margin-bottom: 30px
+	@media (min-width:1200px)
+		margin-bottom: 40px
+	@media (max-width:1199px)
+		.title
+			font-size: 60px
+			line-height: 1.3
+			&:not(:last-child)
+				margin-bottom: 30px
+	@media (max-width:767px)
+		.title
+			font-size: 50px
+			&:not(:last-child)
+				margin-bottom: 20px
+	@media (max-width:575px)
+		.title
+			font-size: 36px
+			&:not(:last-child)
+				margin-bottom: 20px
+	&.center
+		text-align: center

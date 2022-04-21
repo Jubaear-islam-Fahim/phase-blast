@@ -1,0 +1,273 @@
+.tokenImage
+    position: relative
+    img
+        max-width: 100%
+.tokenImageShape
+    position: absolute
+    left: 0
+    right: 0
+    top: -430px
+    text-align: left
+    overflow: hidden
+    img 
+        max-width: 100%
+
+.tokenWrapper
+    display: flex
+    flex-wrap: wrap
+    position: relative
+    z-index: 9
+    align-items: center
+    .tokenImage
+        width: 670px
+        padding-right: 30px
+    .tokenContent
+        width: calc(100% - 670px)
+        @media (max-width:1399px)
+            p
+                font-size: 20px
+    @media (max-width:1399px)
+        .tokenImage
+            width: 500px
+        .tokenContent
+            width: calc(100% - 500px)
+            .sectionHeader
+                .title
+                    font-size: 50px
+                    line-height: 1.3
+                    margin-bottom: 25px
+                p
+                    font-size: 20px
+    @media (max-width:991px)
+        .tokenImage
+            width: 100%
+            max-width: 500px
+            padding: 0
+            margin-bottom: 35px
+        .tokenContent
+            width: 100%
+    @media (max-width:767px)
+        .tokenContent
+            p
+                font-size: 16px
+            .sectionHeader
+                .title
+                    font-size: 42px
+                p
+                    font-size: 16px
+    @media (max-width:575px)
+        .tokenContent
+            .sectionHeader
+                .title
+                    font-size: 36px
+
+.tokenInfo
+    display: flex
+    flex-wrap: wrap
+    font-size: 20px
+    line-height: 1.4
+    li
+        width: calc(100% / 2)
+        padding: 4px 15px
+        border-left: 6px solid #00F5D2
+        margin-bottom: 22px
+        &:nth-of-type(5n + 2)
+            border-color: #EA05FF
+        &:nth-of-type(5n + 3)
+            border-color: #00FFA6
+        &:nth-of-type(5n + 4)
+            border-color: #7E0AAA
+        &:nth-of-type(5n + 5)
+            border-color: #1145FF
+    @media (max-width:1399px)
+        font-size: 18px
+    @media (max-width:1199px)
+        font-size: 16px
+    @media (max-width:575px)
+        li
+            width: 100%
+            margin-bottom: 0
+            border-width: 5px
+            &:not(:last-child)
+                margin-bottom: 15px
+
+.tokenCont
+    width: 470px;
+    height: 470px;
+    margin: 0 auto;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background: #00000073;
+    border-radius: 100%;
+    @media (max-width:575px)
+        width: 300px;
+        height: 300px;
+
+    
+.tokenLogo
+    position: absolute;
+    z-index: 1;
+    width: 210px;
+    height: 210px;
+    left: 50%;
+    transform: translateX(-60%);
+    border: 27px solid #000000ab;
+    border-radius: 100%;
+    @media (max-width: 991px)
+        transform: translateX(-50%);
+    @media (max-width:575px)
+        width: 120px;
+        height: 120px;
+        border: 15px solid #000000ab;
+
+
+.token_cheat 
+    position: relative
+    width: 400px
+    height: 400px
+    background-color: transparent
+    border-radius: 50%
+    overflow: hidden
+    @media (max-width:575px)
+        width: 270px
+        height: 270px
+
+
+    li.cheat_list
+        position: absolute
+        width: 100%
+        height: 100%
+        transform-origin: 0px 200px
+        left: 0
+        top: 0
+        overflow: hidden
+
+        @media (max-width:575px)
+            transform-origin: 0px 135px
+
+        span 
+            transform: rotate(356deg);
+            padding: 26px 0 0 55px;
+            display: block;
+            font-size: 16px;
+            line-height: 20px;
+            position: relative;
+            font-weight: 600
+            @media (max-width:575px)
+                font-size: 14px
+
+        b
+            font-weight: 400;
+            font-size: 16px;
+            padding-left: 5px;
+            @media (max-width:575px)
+                font-size: 13px
+        
+
+        &:before
+            content: ''
+            width: 100%
+            height: 100%
+            position: absolute
+            background-color: transparent
+            transform-origin: 0px 250px
+            top: 0
+            left: 0
+
+        &:nth-child(1)
+            background-color: #00ef9c
+            transform: translateX(200px) rotate(0deg);
+
+            &:before
+                transform: rotate(45deg);
+
+            @media (max-width:575px)
+                transform: translateX(135px) rotate(0deg)
+                span
+                    padding: 14px 0 0 27px;
+
+        &:nth-child(2)
+            background-color: #1145ff
+            transform: translateX(200px) rotate(45deg)
+
+            span 
+                transform: rotate(315deg);
+                padding: 0 0 0 1px; 
+                top: -100px;
+                left: -11px;
+                 
+            &:before
+                transform: rotate(85deg);
+
+            @media (max-width:575px)
+                transform: translateX(135px) rotate(45deg)
+                span
+                    top: -72px;
+                    left: -10px;
+
+        &:nth-child(3)
+            background-color: #ea05ff
+            transform: translateX(200px) rotate(85deg)
+
+            span 
+                transform: rotate(276deg);
+                padding: 0 0 0 1px;
+                top: -160px;
+                left: -123px;
+
+            &:before
+                transform: rotate(130deg);
+
+            @media (max-width:575px)
+                transform: translateX(135px) rotate(85deg)
+                span
+                    top: -112px;
+                    left: -83px;
+
+        &:nth-child(4)
+            background-color: #7e0aaa
+            transform: translateX(200px) rotate(130deg)
+
+            span 
+                transform: rotate(228deg);
+                padding: 0 0 0 1px;
+                top: -105px;
+                left: -255px;
+
+            &:before
+                transform: rotate(180deg);
+
+            @media (max-width:575px)
+                transform: translateX(135px) rotate(130deg)
+                span 
+                    top: -73px;
+                    left: -173px; 
+
+        &:nth-child(5)
+            background-color: #00debe
+            transform: translateX(200px) rotate(180deg)
+
+            span 
+                transform: rotate(180deg);
+                padding: 0 0 0 1px;
+                top: 168px;
+                left: -220px;
+
+            &:before
+                transform: rotate(0deg);
+
+            @media (max-width:575px)
+                transform: translateX(135px) rotate(180deg)
+                span 
+                    top: 103px;
+                    left: -153px; 
+
+        
+        
+
+         
+        
+
+
+    

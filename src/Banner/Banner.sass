@@ -1,0 +1,95 @@
+
+.bannerWrapper
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    position: relative
+    .bannerThumb
+        width: calc(100% - 815px)
+        padding-left: 99px
+        &::before
+            position: absolute
+            content: ''
+        img
+            position: relative
+            z-index: 1
+    .bannerContent
+        max-width: 815px
+        .title
+            font-size: 100px
+            line-height: 118.51px
+            margin-bottom: 50px
+        .text
+            max-width: 689px
+            margin-bottom: 50px
+    @media (max-width:1550px)
+        .bannerThumb
+            width: calc(100% - 650px)
+        .bannerContent
+            width: 650px
+            .title
+                font-size: 70px
+                line-height: 1.3
+                margin-bottom: 40px
+            .text
+                font-size: 18px
+                line-height: 1.5
+                margin-bottom: 30px
+    @media (max-width:1399px)
+        .bannerThumb
+            width: calc(100% - 500px)
+            padding-left: 60px
+        .bannerContent
+            width: 500px
+            .title
+                font-size: 60px
+            .text
+                font-size: 16px
+    @media (max-width:1199px)
+        .bannerThumb
+            width: calc(100% - 450px)
+            padding-left: 40px
+        .bannerContent
+            width: 450px
+            .title
+                font-size: 50px
+            .text
+                font-size: 16px
+    @media (max-width:991px)
+        .bannerThumb
+            width: 100%
+            padding-left: 0
+            margin-top: 35px
+            img
+                max-width: 100%
+        .bannerContent
+            width: 100%
+            .title
+                font-size: 50px
+            .text
+                font-size: 16px
+    @media (max-width:575px)
+        .bannerThumb
+            margin-top: 10px
+        .bannerContent
+            text-align: center
+            .title
+                font-size: 36px
+            .text
+                font-size: 15px
+
+.bannerSection
+    padding: 135px 0
+    position: relative
+    @media (max-width:991px)
+        padding: 200px 0 80px
+    @media (max-width:575px)
+        padding: 140px 0 60px
+
+.shadow__image 
+    position: absolute
+    left: 300px
+    text-align: right
+    right: 0
+    top: 0 
+    overflow: hidden
