@@ -27,11 +27,11 @@ const Token = () => {
 							</div>
 							 
 							<ul className="token_cheat">
-								<li className="cheat_list"> <span>1.0 <br/> <b>M</b> </span> </li>
-								<li className="cheat_list"> <span>1.0 <br/> <b>M</b></span> </li>
-								<li className="cheat_list"> <span>1.0 <br/> <b>M</b></span> </li>
-								<li className="cheat_list"> <span>1.0 <br/> <b>M</b></span> </li>
-								<li className="cheat_list"> <span>9.12 <br/> <b>M</b></span> </li>
+								<li className="cheat_list"> <span>1.0 <br/> <b>m</b> </span> </li>
+								<li className="cheat_list"> <span>1.0 <br/> <b>m</b></span> </li>
+								<li className="cheat_list"> <span>1.0 <br/> <b>m</b></span> </li>
+								<li className="cheat_list"> <span>1.0 <br/> <b>m</b></span> </li>
+								<li className="cheat_list"> <span>9.12 <br/> <b>m</b></span> </li>
 							</ul>
 						</div>
 					</div>
